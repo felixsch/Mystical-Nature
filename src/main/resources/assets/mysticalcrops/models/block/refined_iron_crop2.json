@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mysticalcrops:block/crop/refined_iron_crop2"
+  }
+}

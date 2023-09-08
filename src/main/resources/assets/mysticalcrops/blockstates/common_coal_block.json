@@ -1,5 +1,5 @@
 {
   "variants": {
-    "": { "model": "mysticalcrops:block/basic_coal_block" }
+    "": { "model": "mysticalcrops:block/common_coal_block" }
   }
 }

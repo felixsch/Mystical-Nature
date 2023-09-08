@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_coal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:coal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:wonderful_coal_1"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wonderful_essence": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mysticalcrops:wonderful_essence"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wonderful_essence",
+      "has_coal",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:wonderful_coal_1"
+    ]
+  }
+}

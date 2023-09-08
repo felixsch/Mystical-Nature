@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:wonderful_coal_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wonderful_coal": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mysticalcrops:wonderful_coal"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wonderful_coal",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:wonderful_coal_block"
+    ]
+  }
+}

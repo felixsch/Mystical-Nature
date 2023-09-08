@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "mysticalcrops:block/crop/amethyst_crop2"
+  }
+}

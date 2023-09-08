@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "item": "mysticalcrops:uncommon_essence_planks"
+      "item": "mysticalcrops:uncommon_essence"
     },
     "@": {
       "item": "minecraft:chest"

@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mysticalcrops:item/advance_essence"
+    "layer0": "mysticalcrops:item/wonderful_essence"
   }
 }

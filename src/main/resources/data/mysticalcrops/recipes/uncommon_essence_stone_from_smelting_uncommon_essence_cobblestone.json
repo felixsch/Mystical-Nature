@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "cookingtime": 300,
+  "experience": 3.0,
+  "group": "essence_stone",
+  "ingredient": {
+    "item": "mysticalcrops:uncommon_essence_cobblestone"
+  },
+  "result": "mysticalcrops:uncommon_essence_stone"
+}

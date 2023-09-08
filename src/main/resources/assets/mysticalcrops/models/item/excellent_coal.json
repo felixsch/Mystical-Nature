@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mysticalcrops:item/ultra_coal"
+    "layer0": "mysticalcrops:item/excellent_coal"
   }
 }

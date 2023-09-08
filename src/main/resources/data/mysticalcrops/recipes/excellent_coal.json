@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "mysticalcrops:excellent_coal_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "mysticalcrops:excellent_coal"
+  }
+}

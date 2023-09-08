@@ -1,0 +1,34 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:wonderful_essence_stone_from_smelting_wonderful_essence_cobblestone"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wonderful_essence_cobblestone": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "mysticalcrops:wonderful_essence_cobblestone"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wonderful_essence_cobblestone",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:wonderful_essence_stone_from_smelting_wonderful_essence_cobblestone"
+    ]
+  }
+}

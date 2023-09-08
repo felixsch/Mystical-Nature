@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "mysticalcrops:block/crop/gobber_crop2"
+  }
+}

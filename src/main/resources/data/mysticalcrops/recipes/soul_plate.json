@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "#": {
-      "tag": "minecraft:soul_sands"
+      "item": "minecraft:soul_sand"
     }
   },
   "pattern": [

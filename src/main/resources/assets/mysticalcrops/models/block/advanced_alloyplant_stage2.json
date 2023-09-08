@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "mysticalcrops:block/advanced_alloyplant_stage2"
-  }
-}

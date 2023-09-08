@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "mysticalcrops:item/basic_essence"
+    "layer0": "mysticalcrops:item/common_essence"
   }
 }
