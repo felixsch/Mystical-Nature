@@ -4,6 +4,8 @@ import net.marwinka.mysticalcrops.recipe.InfusionRecipe;
 import net.marwinka.mysticalcrops.registry.ModBlockEntities;
 import net.marwinka.mysticalcrops.registry.ModRecipes;
 import net.marwinka.mysticalcrops.screenhandler.InfusionHandler;
+import net.marwinka.mysticalcrops.util.tags;
+
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
@@ -13,6 +15,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.screen.ScreenHandler;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
+
 import org.jetbrains.annotations.Nullable;
 
 import java.util.Optional;
@@ -21,29 +24,30 @@ public class InfusionEntity extends AbstractTableEntity {
     public InfusionEntity(BlockPos pos, BlockState state) {
         super(ModBlockEntities.INFUSION_TABLE, pos, state,100);
     }
+
     @Nullable
     @Override
     public ScreenHandler createMenu(int syncId, PlayerInventory inv, PlayerEntity player) {
         return new InfusionHandler(syncId, inv, this, this.propertyDelegate);
     }
+
     @Override
     public boolean canExtract(int slot, ItemStack stack, Direction side) {
         return slot == 5;
     }
+
     @Override
     public boolean canInsert(int slot, ItemStack stack, @Nullable Direction side) {
-        if (!stack.isStackable()) {
-            return slot == 0;
-        }
-        else{
-            if(slots != 4){
-                slots++;
-                return slot == slots;
-            }
-            else slots = 0;
-        }
-        return false;
+      if (stack.isIn(tags.CRYSTAL)) {
+        return slot == 0;
+      }
+
+      if (stack.isIn(tags.ESSENCE) && slot > 0 && slot < 5) {
+        return true;
+      }
+      return false;
     }
+
     public static boolean canInsertItemIntoOutputSlot(SimpleInventory inventory, Item output) {
         return inventory.getStack(5).getItem() == output || inventory.getStack(5).isEmpty();
     }
