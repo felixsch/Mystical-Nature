@@ -31,6 +31,7 @@ public class ModVanillaItems {
     public static final Crop PRISMARINE = register(new Crop("prismarine",  3));
     public static final Crop SOUL = register(new Crop("soul",  3));
     public static final Crop AMETHYST = register(new Crop("amethyst",  4));
+    public static final Crop ECHO = register(new Crop("echo",  4));
     public static final Crop GOLD = register(new Crop("gold",  4));
     public static final Crop LAPIS = register(new Crop("lapis",  4));
     public static final Crop REDSTONE = register(new Crop("redstone",  4));

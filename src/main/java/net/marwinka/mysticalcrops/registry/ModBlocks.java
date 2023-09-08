@@ -76,7 +76,6 @@ public class ModBlocks {
     public static final Block EXCELLENT_CHEST = register(new GenericChestBlock(ChestTypes.EXCELLENT.setting(), ChestTypes.EXCELLENT), "excellent_chest");
     public static final Block PERFECT_CHEST = register(new GenericChestBlock(ChestTypes.PERFECT.setting(), ChestTypes.PERFECT), "perfect_chest");
 
-    public static final Block BOTANICAL_RITUAL_TABLE = register(new RitualBlock(FabricBlockSettings.of(Material.STONE).strength(4f).nonOpaque().requiresTool()), "botanical_ritual_table");
     private static Block register(Block block, String name) {
         Identifier id = new ModIdentifier(name);
         BLOCKS.put(block, id);

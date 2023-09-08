@@ -1,16 +1,11 @@
 {
   "replace": false,
   "values": [
-    "mysticalcrops:basic_crystal",
-    "mysticalcrops:uncommon_crystal",
-    "mysticalcrops:advance_crystal",
-    "mysticalcrops:ultra_crystal",
-    "mysticalcrops:ultimate_crystal",
-    "mysticalcrops:infinity_crystal",
     "mysticalcrops:common_crystal",
     "mysticalcrops:uncommon_crystal",
     "mysticalcrops:wonderful_crystal",
     "mysticalcrops:excellent_crystal",
-    "mysticalcrops:perfect_crystal"
+    "mysticalcrops:perfect_crystal",
+    "mysticalcrops:infinity_crystal"
   ]
 }

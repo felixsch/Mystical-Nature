@@ -1,15 +1,10 @@
 {
   "values": [
     "mysticalcrops:botanical_table",
-    "mysticalcrops:basic_essence_block",
-    "mysticalcrops:basic_coal_block",
-    "mysticalcrops:uncommon_coal_block",
-    "mysticalcrops:advance_coal_block",
-    "mysticalcrops:ultra_coal_block",
-    "mysticalcrops:ultimate_coal_block",
-
     "mysticalcrops:common_block",
+
     "mysticalcrops:common_coal_block",
+    "mysticalcrops:uncommon_coal_block",
     "mysticalcrops:wonderful_coal_block",
     "mysticalcrops:excellent_coal_block",
     "mysticalcrops:perfect_coal_block",
@@ -18,6 +13,7 @@
     "mysticalcrops:wonderful_essence_stone",
     "mysticalcrops:excellent_essence_stone",
     "mysticalcrops:perfect_essence_stone",
+
     "mysticalcrops:essence_cobblestone",
     "mysticalcrops:uncommon_essence_cobblestone",
     "mysticalcrops:wonderful_essence_cobblestone",
