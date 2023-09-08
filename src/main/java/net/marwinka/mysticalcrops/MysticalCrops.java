@@ -63,7 +63,6 @@ public class MysticalCrops implements ModInitializer {
 		ModVanillaItems.registerItems();
 		ModCrops.registerBlocks();
 		ModRecipes.register();
-		OldCrops.registerCrops();
 		ModCrops.registerItems();
 		ModFuel.register();
 		ModConfiguredFeatures.registerConfiguredFeatures();

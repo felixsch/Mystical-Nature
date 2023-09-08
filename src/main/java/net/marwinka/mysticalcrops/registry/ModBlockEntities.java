@@ -5,7 +5,6 @@ import net.marwinka.mysticalcrops.block.chest.entity.*;
 import net.marwinka.mysticalcrops.block.entity.BotanicalEntity;
 import net.marwinka.mysticalcrops.block.entity.InfusionEntity;
 import net.marwinka.mysticalcrops.block.entity.RitualEntity;
-import net.marwinka.mysticalcrops.block.old.OldRitualEntity;
 import net.marwinka.mysticalcrops.util.inventory.ModIdentifier;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
@@ -15,7 +14,6 @@ import net.minecraft.util.registry.Registry;
 public class ModBlockEntities {
     public static BlockEntityType<BotanicalEntity> BOTANICAL_TABLE;
     public static BlockEntityType<RitualEntity> RITUAL_TABLE;
-    public static BlockEntityType<OldRitualEntity> BOTANICAL_RITUAL_TABLE;
     public static BlockEntityType<InfusionEntity> INFUSION_TABLE;
     public static final BlockEntityType<CommonChestEntity> COMMON_CHEST = FabricBlockEntityTypeBuilder.create(CommonChestEntity::new, ModBlocks.COMMON_CHEST).build(null);
     public static final BlockEntityType<UncommonChestEntity> UNCOMMON_CHEST = FabricBlockEntityTypeBuilder.create(UncommonChestEntity::new, ModBlocks.UNCOMMON_CHEST).build(null);
@@ -25,8 +23,6 @@ public class ModBlockEntities {
     public static void register() {
         BOTANICAL_TABLE = register("botanical_entity", BotanicalEntity::new, ModBlocks.BOTANICAL_TABLE);
         RITUAL_TABLE = register("ritual_entity", RitualEntity::new, ModBlocks.RITUAL_TABLE);
-
-        BOTANICAL_RITUAL_TABLE = register("botanical_ritual_table", OldRitualEntity::new, ModBlocks.BOTANICAL_RITUAL_TABLE);
 
         INFUSION_TABLE = register("infusion_entity", InfusionEntity::new, ModBlocks.INFUSION_TABLE);
 

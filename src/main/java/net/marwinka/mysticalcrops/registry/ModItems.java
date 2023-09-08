@@ -2,9 +2,6 @@ package net.marwinka.mysticalcrops.registry;
 
 import net.marwinka.mysticalcrops.items.Coals;
 import net.marwinka.mysticalcrops.items.Souls;
-import net.marwinka.mysticalcrops.items.old.AliasedBlockItems;
-import net.marwinka.mysticalcrops.items.old.OldItem;
-import net.marwinka.mysticalcrops.items.old.OldTool;
 import net.marwinka.mysticalcrops.items.tools.EssenceTool;
 import net.marwinka.mysticalcrops.items.tools.InfinityTool;
 import net.marwinka.mysticalcrops.items.tools.ToolMaterials;
@@ -85,45 +82,6 @@ public class ModItems {
     public static final Item WONDERFUL_WATERING_CAN = register(new WateringCan(9, 0.8, 3), "wonderful_watering_can");
     public static final Item EXCELLENT_WATERING_CAN = register(new WateringCan(11, 0.9, 4), "excellent_watering_can");
     public static final Item PERFECT_WATERING_CAN = register(new WateringCan(13, 1, 5), "perfect_watering_can");
-
-    //old
-    public static final Item BASIC_WATERING_CAN = register(new OldItem(), "basic_watering_can");
-    public static final Item ADVANCE_WATERING_CAN = register(new OldItem(), "advance_watering_can");
-    public static final Item ULTRA_WATERING_CAN = register(new OldItem(), "ultra_watering_can");
-    public static final Item ULTIMATE_WATERING_CAN = register(new OldItem(), "ultimate_watering_can");
-
-
-    public static final Item CRAFT_SEEDS_TIER_2 = register(new OldItem(),"craft_seeds_tier_2");
-    public static final Item CRAFT_SEEDS_TIER_3 = register(new OldItem(),"craft_seeds_tier_3");
-    public static final Item CRAFT_SEEDS_TIER_4 = register(new OldItem(),"craft_seeds_tier_4");
-    public static final Item CRAFT_SEEDS_TIER_5 = register(new OldItem(),"craft_seeds_tier_5");
-
-    public static final Item BASIC_ESSENCE = register(new OldItem(),"basic_essence");
-    public static final Item ADVANCE_ESSENCE = register(new OldItem(),"advance_essence");
-    public static final Item ULTRA_ESSENCE = register(new OldItem(),"ultra_essence");
-    public static final Item ULTIMATE_ESSENCE = register(new OldItem(),"ultimate_essence");
-
-    public static final Item BASIC_CRYSTAL = register(new OldTool(ToolMaterials.COMMON_CRYSTAL), "basic_crystal");
-    public static final Item ADVANCE_CRYSTAL = register(new OldTool(ToolMaterials.WONDERFUL_CRYSTAL), "advance_crystal");
-    public static final Item ULTRA_CRYSTAL = register(new OldTool(ToolMaterials.EXCELLENT_CRYSTAL), "ultra_crystal");
-    public static final Item ULTIMATE_CRYSTAL = register(new OldTool(ToolMaterials.PERFECT_CRYSTAL), "ultimate_crystal");
-
-    public static final Item BASIC_COAL = register(new OldItem(), "basic_coal");
-    public static final Item ADVANCE_COAL = register(new OldItem(), "advance_coal");
-    public static final Item ULTRA_COAL = register(new OldItem(), "ultra_coal");
-    public static final Item ULTIMATE_COAL = register(new OldItem(), "ultimate_coal");
-
-    public static final Item ESSENCE_FRUIT_TIER_1 = register(new OldItem(), "essence_fruit_tier_1");
-    public static final Item ESSENCE_FRUIT_TIER_2 = register(new OldItem(), "essence_fruit_tier_2");
-    public static final Item ESSENCE_FRUIT_TIER_3 = register(new OldItem(), "essence_fruit_tier_3");
-    public static final Item ESSENCE_FRUIT_TIER_4 = register(new OldItem(), "essence_fruit_tier_4");
-    public static final Item ESSENCE_FRUIT_TIER_5 = register(new OldItem(), "essence_fruit_tier_5");
-
-    public static final Item ESSENCE_SEEDS_TIER_1 = register(new AliasedBlockItems(OldCrops.ESSENCE_CROP_TIER_1), "essence_seeds_tier_1");
-    public static final Item ESSENCE_SEEDS_TIER_2 = register(new AliasedBlockItems(OldCrops.ESSENCE_CROP_TIER_2), "essence_seeds_tier_2");
-    public static final Item ESSENCE_SEEDS_TIER_3 = register(new AliasedBlockItems(OldCrops.ESSENCE_CROP_TIER_3), "essence_seeds_tier_3");
-    public static final Item ESSENCE_SEEDS_TIER_4 = register(new AliasedBlockItems(OldCrops.ESSENCE_CROP_TIER_4), "essence_seeds_tier_4");
-    public static final Item ESSENCE_SEEDS_TIER_5 = register(new AliasedBlockItems(OldCrops.ESSENCE_CROP_TIER_5), "essence_seeds_tier_5");
 
     private static Item register(String name) {
         return register(new BaseItem(p -> p.group(ITEMGROUPCLASSIC)), name);

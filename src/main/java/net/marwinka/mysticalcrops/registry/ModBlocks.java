@@ -6,7 +6,6 @@ import net.marwinka.mysticalcrops.block.InfusionBlock;
 import net.marwinka.mysticalcrops.block.RitualBlock;
 import net.marwinka.mysticalcrops.block.chest.ChestTypes;
 import net.marwinka.mysticalcrops.block.chest.GenericChestBlock;
-import net.marwinka.mysticalcrops.items.old.OldBlock;
 import net.marwinka.mysticalcrops.util.block.BaseBlock;
 import net.marwinka.mysticalcrops.util.block.BaseCoalBlock;
 import net.marwinka.mysticalcrops.util.block.BaseOreBlock;
@@ -76,17 +75,6 @@ public class ModBlocks {
     public static final Block WONDERFUL_CHEST = register(new GenericChestBlock(ChestTypes.WONDERFUL.setting(), ChestTypes.WONDERFUL), "wonderful_chest");
     public static final Block EXCELLENT_CHEST = register(new GenericChestBlock(ChestTypes.EXCELLENT.setting(), ChestTypes.EXCELLENT), "excellent_chest");
     public static final Block PERFECT_CHEST = register(new GenericChestBlock(ChestTypes.PERFECT.setting(), ChestTypes.PERFECT), "perfect_chest");
-
-
-    public static final Block BASIC_ESSENCE_BLOCK = register(new OldBlock(), "basic_essence_block");
-    public static final Block UNCOMMON_ESSENCE_BLOCK = register(new OldBlock(), "uncommon_essence_block");
-    public static final Block ADVANCE_ESSENCE_BLOCK = register(new OldBlock(), "advance_essence_block");
-    public static final Block ULTRA_ESSENCE_BLOCK = register(new OldBlock(), "ultra_essence_block");
-    public static final Block ULTIMATE_ESSENCE_BLOCK = register(new OldBlock(), "ultimate_essence_block");
-    public static final Block BASIC_COAL_BLOCK = register(new OldBlock(),"basic_coal_block");
-    public static final Block ADVANCE_COAL_BLOCK = register(new OldBlock(),"advance_coal_block");
-    public static final Block ULTRA_COAL_BLOCK = register(new OldBlock(),"ultra_coal_block");
-    public static final Block ULTIMATE_COAL_BLOCK = register(new OldBlock(),"ultimate_coal_block");
 
     public static final Block BOTANICAL_RITUAL_TABLE = register(new RitualBlock(FabricBlockSettings.of(Material.STONE).strength(4f).nonOpaque().requiresTool()), "botanical_ritual_table");
     private static Block register(Block block, String name) {
