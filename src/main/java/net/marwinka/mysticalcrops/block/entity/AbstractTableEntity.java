@@ -57,7 +57,7 @@ public abstract class AbstractTableEntity extends BlockEntity implements Extende
     public int progress;
     public int maxProgress;
     public abstract void tick();
-    public void DamageItem(){
+    public void damageItem(){
         if (this.getStack(0).getItem().isDamageable()) {
             this.getStack(0).setDamage(this.getStack(0).getDamage() + 1);
             if (this.getStack(0).getDamage() >= this.getStack(0).getItem().getMaxDamage()) {

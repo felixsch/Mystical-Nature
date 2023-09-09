@@ -2,10 +2,11 @@ package net.marwinka.mysticalcrops.registry;
 
 import net.marwinka.mysticalcrops.items.Coals;
 import net.marwinka.mysticalcrops.items.Souls;
-import net.marwinka.mysticalcrops.items.tools.EssenceTool;
-import net.marwinka.mysticalcrops.items.tools.InfinityTool;
-import net.marwinka.mysticalcrops.items.tools.ToolMaterials;
+import net.marwinka.mysticalcrops.items.tools.Materials;
+import net.marwinka.mysticalcrops.items.tools.Crystal;
+import net.marwinka.mysticalcrops.items.tools.Knife;
 import net.marwinka.mysticalcrops.items.tools.WateringCan;
+
 import net.marwinka.mysticalcrops.util.block.BaseItem;
 import net.marwinka.mysticalcrops.util.inventory.ModIdentifier;
 import net.minecraft.item.Item;
@@ -35,12 +36,12 @@ public class ModItems {
     public static final Item EXCELLENT_ESSENCE = register("excellent_essence");
     public static final Item PERFECT_ESSENCE = register("perfect_essence");
 
-    public static final Item COMMON_CRYSTAL = register(new EssenceTool(ToolMaterials.COMMON_CRYSTAL), "common_crystal");
-    public static final Item UNCOMMON_CRYSTAL = register(new EssenceTool(ToolMaterials.UNCOMMON_CRYSTAL), "uncommon_crystal");
-    public static final Item WONDERFUL_CRYSTAL = register(new EssenceTool(ToolMaterials.WONDERFUL_CRYSTAL), "wonderful_crystal");
-    public static final Item EXCELLENT_CRYSTAL = register(new EssenceTool(ToolMaterials.EXCELLENT_CRYSTAL), "excellent_crystal");
-    public static final Item PERFECT_CRYSTAL = register(new EssenceTool(ToolMaterials.PERFECT_CRYSTAL), "perfect_crystal");
-    public static final Item INFINITY_CRYSTAL = register(new InfinityTool(ToolMaterials.PERFECT_CRYSTAL),"infinity_crystal");
+    public static final Item COMMON_CRYSTAL = register(new Crystal(Materials.COMMON), "common_crystal");
+    public static final Item UNCOMMON_CRYSTAL = register(new Crystal(Materials.UNCOMMON), "uncommon_crystal");
+    public static final Item WONDERFUL_CRYSTAL = register(new Crystal(Materials.WONDERFUL), "wonderful_crystal");
+    public static final Item EXCELLENT_CRYSTAL = register(new Crystal(Materials.EXCELLENT), "excellent_crystal");
+    public static final Item PERFECT_CRYSTAL = register(new Crystal(Materials.PERFECT), "perfect_crystal");
+    public static final Item INFINITY_CRYSTAL = register(new Crystal(Materials.INFINITY),"infinity_crystal");
 
     public static final Item DARK_CRYSTAL = register("dark_crystal");
 
@@ -69,12 +70,12 @@ public class ModItems {
     public static final Item PERFECT_INGOT = register("perfect_ingot");
     public static final Item INFINITY_INGOT = register("infinity_ingot");
 
-    public static final Item COMMON_KNIFE = register(new EssenceTool(ToolMaterials.COMMON_KNIFE), "common_knife");
-    public static final Item UNCOMMON_KNIFE = register(new EssenceTool(ToolMaterials.UNCOMMON_KNIFE), "uncommon_knife");
-    public static final Item WONDERFUL_KNIFE = register(new EssenceTool(ToolMaterials.WONDERFUL_KNIFE), "wonderful_knife");
-    public static final Item EXCELLENT_KNIFE = register(new EssenceTool(ToolMaterials.EXCELLENT_KNIFE), "excellent_knife");
-    public static final Item PERFECT_KNIFE = register(new EssenceTool(ToolMaterials.PERFECT_KNIFE), "perfect_knife");
-    public static final Item INFINITY_KNIFE = register(new InfinityTool(ToolMaterials.PERFECT_KNIFE),"infinity_knife");
+    public static final Item COMMON_KNIFE = register(new Knife(Materials.COMMON), "common_knife");
+    public static final Item UNCOMMON_KNIFE = register(new Knife(Materials.UNCOMMON), "uncommon_knife");
+    public static final Item WONDERFUL_KNIFE = register(new Knife(Materials.WONDERFUL), "wonderful_knife");
+    public static final Item EXCELLENT_KNIFE = register(new Knife(Materials.EXCELLENT), "excellent_knife");
+    public static final Item PERFECT_KNIFE = register(new Knife(Materials.PERFECT), "perfect_knife");
+    public static final Item INFINITY_KNIFE = register(new Knife(Materials.INFINITY),"infinity_knife");
 
     public static final Item WATERING_CAN = register(new WateringCan(3, 0.5, 0), "watering_can");
     public static final Item COMMON_WATERING_CAN = register(new WateringCan(5, 0.6, 1), "common_watering_can");

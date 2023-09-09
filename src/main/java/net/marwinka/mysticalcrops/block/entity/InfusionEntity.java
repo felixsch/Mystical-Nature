@@ -71,7 +71,7 @@ public class InfusionEntity extends AbstractTableEntity {
                         this.getStack(i).decrement(1);
                     }
                     this.setStack(5, new ItemStack(recipe.get().getOutput().getItem(),this.getStack(5).getCount() + 1));
-                    DamageItem();
+                    damageItem();
                 }
             } else {
                 resetProgress();

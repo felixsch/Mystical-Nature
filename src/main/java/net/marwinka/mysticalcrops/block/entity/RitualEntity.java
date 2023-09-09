@@ -72,7 +72,7 @@ public class RitualEntity extends AbstractTableEntity {
                         if(i != 5) this.getStack(i).decrement(1);
                     }
                     this.setStack(5, recipe.get().getOutput());
-                    DamageItem();
+                    damageItem();
                 }
             }
             else {
