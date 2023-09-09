@@ -16,8 +16,8 @@ import java.awt.*;
 
 public class RitualScreen extends HandledScreen<RitualHandler> {
     private static final Identifier TEXTURE = new ModIdentifier("textures/gui/ritual_gui.png");
-    public static final int TRANSFORM_LEFT = 51;
-    public static final int TRANSFORM_TOP = 16;
+    public static final int TRANSFORM_LEFT = 61;
+    public static final int TRANSFORM_TOP = 25;
 
     public RitualScreen(RitualHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);

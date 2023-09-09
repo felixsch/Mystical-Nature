@@ -32,16 +32,16 @@ public class RitualHandler extends ScreenHandler {
         this.propertyDelegate = delegate;
         this.blockEntity = (RitualEntity) entity;
 
-        this.addSlot(new CrystalSlot(inventory, 0, 8, 44));
-        this.addSlot(new Slot(inventory, 1, 44, 8));
+        this.addSlot(new CrystalSlot(inventory, 0, 11, 44));
+        this.addSlot(new Slot(inventory, 1, 53, 17));
         this.addSlot(new Slot(inventory, 2, 44, 44));
-        this.addSlot(new Slot(inventory, 3, 44, 80));
+        this.addSlot(new Slot(inventory, 3, 53, 71));
         this.addSlot(new Slot(inventory, 4, 80, 8));
         this.addSlot(new SeedSlot(inventory, 5, 80, 44));
         this.addSlot(new Slot(inventory, 6, 80, 80));
-        this.addSlot(new Slot(inventory, 7, 116, 8));
+        this.addSlot(new Slot(inventory, 7, 107, 17));
         this.addSlot(new Slot(inventory, 8, 116, 44));
-        this.addSlot(new Slot(inventory, 9, 116, 80));
+        this.addSlot(new Slot(inventory, 9, 107, 71));
 
         addPlayerInventory(playerInventory);
         addPlayerHotbar(playerInventory);
